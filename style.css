@@ -1,0 +1,31 @@
+body {
+  padding: 5% 10%;
+}
+
+p {
+  font-size: medium;
+  color: #c3c3c3;
+}
+
+.terminal {
+  border: 1px;
+  border-style: solid;
+}
+.terminal__title {
+  padding-top: 2%;
+}
+
+.hero-body {
+  padding: 0.5% 1%;
+}
+
+.navbar .navbar-brand {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+  display: inline-block;
+}
