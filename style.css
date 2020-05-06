@@ -1,30 +1,53 @@
-.body__padding {
-  padding: 5% 10%;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-p {
-  font-size: medium;
-  color: #c3c3c3;
+.hide-scrollbar,
+.content {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
 }
 
 .terminal {
-  border: 1px;
-  border-style: solid;
-}
-.terminal__title {
-  padding-top: 2%;
+  width: 80%;
+  height: 90%;
+  max-height: 90%;
+  position: fixed;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.terminal__max {
-  position: static;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+#terminal__container {
+  -webkit-box-shadow: 0px 3px 10px 7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 10px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 10px 7px rgba(0, 0, 0, 0.15);
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.terminal__title {
+  padding-top: 1%;
+  font-size: 120%;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-body {
-  padding: 0.5% 1%;
+  padding: 0% 1%;
+  height: 10%;
+}
+
+.content {
+  padding: 0.75% 1%;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .navbar .navbar-brand {
@@ -36,4 +59,102 @@ p {
 .navbar .navbar-brand > .navbar-item,
 .navbar .navbar-brand .navbar-link {
   display: inline-block;
+}
+
+hr {
+  width: 95%;
+  margin: 0 2.5%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+img {
+  border-radius: 5%;
+}
+
+img:hover,
+img:active {
+  transform: scaleX(-1);
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.command {
+  padding-left: 0.5%;
+  padding-bottom: 1.5%;
+  font-size: 120%;
+}
+
+/* .palette > div {
+  padding-left: 10.5%;
+  padding-bottom: 0.05%;
+} */
+
+.palette > div {
+  padding-left: 10%;
+  padding: 0.5%;
+}
+
+.palette > div {
+  padding-left: 5%;
+}
+
+.pre {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 140%;
+}
+
+.palette > div > span {
+  font-size: 120%;
+}
+
+.columns {
+  max-width: 100%;
+}
+
+.prompt {
+  display: inline-block;
+}
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+  font-size: 120%;
+}
+@keyframes blinkingText {
+  0% {
+    color: mediumturquoise;
+  }
+  49% {
+    color: mediumturquoise;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: mediumturquoise;
+  }
+}
+
+.terminal__max {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body__padding {
+  padding: 5% 10%;
 }
