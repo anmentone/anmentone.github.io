@@ -2,7 +2,7 @@ init();
 
 let cur = checkSun();
 let i = 0;
-const txt = `Hi, I'm Antonio Mentone. 23. Computer Science passionate. During this time I am taking German lessons at school and every day I try to improve my English by myself. In my head I want to complete my university route with a master's degree in data science or software engineering, doing it with a part-time job would be perfect so I can gain work experience. I don't know the causes that brought you here but if you need anything else I'm available on several social networks or send me an email.`;
+const txt = `Hi, I'm Antonio Mentone. 24. Computer Science passionate. During this time I am taking German lessons at school and every day I try to improve my English by myself. In my head I want to complete my university route with a master's degree in data science or software engineering, doing it with a part-time job would be perfect so I can gain work experience. I don't know the causes that brought you here but if you need anything else I'm available on several social networks or send me an email.`;
 
 sleep(3000).then(() => {
   document
